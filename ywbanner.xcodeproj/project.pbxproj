@@ -396,7 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SDS8S8H92;
-				GCC_PREFIX_HEADER = /Users/louyaowen/Desktop/ttttt/ywbanner/ywbanner/Config/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/louyaowen/Desktop/ywbanner/ywbanner/Config/PrefixHeader.pch;
 				INFOPLIST_FILE = ywbanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -413,7 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SDS8S8H92;
-				GCC_PREFIX_HEADER = /Users/louyaowen/Desktop/ttttt/ywbanner/ywbanner/Config/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/louyaowen/Desktop/ywbanner/ywbanner/Config/PrefixHeader.pch;
 				INFOPLIST_FILE = ywbanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

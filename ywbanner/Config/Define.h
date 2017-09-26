@@ -13,6 +13,4 @@
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define SCREEN_BOUNDS ([UIScreen mainScreen].bounds)
 
-#define isLogin @"is_login"
-
 #endif /* Define_h */

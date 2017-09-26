@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //self.automaticallyAdjustsScrollViewInsets = NO;
     self.title = @"ywbanner";
     self.view.backgroundColor = [UIColor whiteColor];
 
@@ -55,10 +56,12 @@
     
     if (_bannerView == nil) {
         _bannerView = [[ywbanner alloc] initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, 220)];
-        _bannerView.shouldLoop = YES;
         _bannerView.delegate = self;
         _bannerView.dataSource = self;
-        _bannerView.backgroundColor = [UIColor yellowColor];
+        
+        _bannerView.shouldLoop = YES;
+        _bannerView.automaticScroll = YES;
+        //_bannerView.autoScrollInterval = 1.0;
     }
     return _bannerView;
 }

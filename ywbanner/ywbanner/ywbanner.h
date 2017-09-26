@@ -11,7 +11,24 @@
 @protocol ywbannerDelegate, ywbannerDataSource;
 @interface ywbanner : UIView
 
-@property (nonatomic, assign) BOOL shouldLoop; //循环播放 default = NO
+/**
+ *  循环播放 default = NO
+ */
+@property (nonatomic, assign) BOOL shouldLoop;
+/**
+ *  自动滚动 default = NO
+ */
+@property (nonatomic, assign) BOOL automaticScroll;
+
+/**
+ *  自动滚动时间间隔 default = 2s
+ */
+@property (nonatomic, assign) CGFloat autoScrollInterval;
+
+/**
+ *  pageControl 可自定义配置
+ */
+@property (nonatomic, strong) UIPageControl *pageControl;
 
 @property (nonatomic, weak) id<ywbannerDelegate>   delegate;
 @property (nonatomic, weak) id<ywbannerDataSource> dataSource;
