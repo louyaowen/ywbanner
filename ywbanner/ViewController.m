@@ -36,6 +36,11 @@
     NSLog(@"banner: %ld - %ld",banner.tag,index);
 }
 
+- (void)ywBannerFooterDidTrigger:(ywbanner *)banner {
+    
+    NSLog(@"footer 触发");
+}
+
 #pragma mark - banner dataSource
 - (NSInteger)numberOfItemsInBannerView:(ywbanner *)banner {
     return _dataSource.count;
@@ -50,6 +55,14 @@
     return imageView;
 }
 
+- (NSString *)ywbanner:(ywbanner *)banner titleForFooler:(ywFooterState)state {
+    if (state == ywFooterNormal) {
+        return @"继续推动";
+    } else {
+        return @"释放";
+    }
+}
+
 
 
 - (ywbanner *)bannerView {
@@ -60,8 +73,9 @@
         _bannerView.dataSource = self;
         
         _bannerView.shouldLoop = YES;
-        _bannerView.automaticScroll = YES;
-        //_bannerView.autoScrollInterval = 1.0;
+        _bannerView.automaticScroll = NO;
+        _bannerView.autoScrollInterval = 3.0;
+        _bannerView.showFooter = YES;
     }
     return _bannerView;
 }

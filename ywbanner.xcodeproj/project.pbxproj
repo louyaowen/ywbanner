@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		125319C019B5A9046A9012CE /* libPods-ywbanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACB934C115847AACEC22E86 /* libPods-ywbanner.a */; };
+		224EFB461F7B7F17003C9A0E /* ywfooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 224EFB451F7B7F17003C9A0E /* ywfooter.m */; };
+		224EFB4A1F7B85DE003C9A0E /* ywbanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 224EFB491F7B85DE003C9A0E /* ywbanner.bundle */; };
 		227963871F790F7800D5D57C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 227963861F790F7800D5D57C /* AppDelegate.m */; };
 		2279638A1F790F7800D5D57C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 227963891F790F7800D5D57C /* ViewController.m */; };
 		227963AA1F79101900D5D57C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2279639F1F79101800D5D57C /* Assets.xcassets */; };
@@ -19,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		224EFB441F7B7F17003C9A0E /* ywfooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ywfooter.h; sourceTree = "<group>"; };
+		224EFB451F7B7F17003C9A0E /* ywfooter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ywfooter.m; sourceTree = "<group>"; };
+		224EFB491F7B85DE003C9A0E /* ywbanner.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ywbanner.bundle; sourceTree = "<group>"; };
 		227963821F790F7800D5D57C /* ywbanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ywbanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		227963851F790F7800D5D57C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		227963861F790F7800D5D57C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +125,9 @@
 				227963A71F79101900D5D57C /* ywbanner.m */,
 				227963A81F79101900D5D57C /* ywbannerItem.h */,
 				227963A91F79101900D5D57C /* ywbannerItem.m */,
+				224EFB441F7B7F17003C9A0E /* ywfooter.h */,
+				224EFB451F7B7F17003C9A0E /* ywfooter.m */,
+				224EFB491F7B85DE003C9A0E /* ywbanner.bundle */,
 			);
 			path = ywbanner;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				227963AC1F79101900D5D57C /* Main.storyboard in Resources */,
+				224EFB4A1F7B85DE003C9A0E /* ywbanner.bundle in Resources */,
 				227963AB1F79101900D5D57C /* LaunchScreen.storyboard in Resources */,
 				227963AA1F79101900D5D57C /* Assets.xcassets in Resources */,
 			);
@@ -257,6 +266,7 @@
 			files = (
 				2279638A1F790F7800D5D57C /* ViewController.m in Sources */,
 				227963AD1F79101900D5D57C /* main.m in Sources */,
+				224EFB461F7B7F17003C9A0E /* ywfooter.m in Sources */,
 				227963871F790F7800D5D57C /* AppDelegate.m in Sources */,
 				227963AE1F79101900D5D57C /* ywbanner.m in Sources */,
 				227963AF1F79101900D5D57C /* ywbannerItem.m in Sources */,

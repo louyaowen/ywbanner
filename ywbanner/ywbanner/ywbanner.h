@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ywfooter.h"
 
 @protocol ywbannerDelegate, ywbannerDataSource;
 @interface ywbanner : UIView
@@ -19,7 +20,10 @@
  *  自动滚动 default = NO
  */
 @property (nonatomic, assign) BOOL automaticScroll;
-
+/**
+ *  是否显示footer default = NO (配置showFooter为YES shouldLoop将被自动置为NO)
+ */
+@property (nonatomic, assign) BOOL showFooter;
 /**
  *  自动滚动时间间隔 default = 2s
  */
@@ -37,6 +41,7 @@
 @protocol ywbannerDelegate <NSObject>
 @optional
 - (void)ywbanner:(ywbanner *)banner didSelectedItemAtIndex:(NSInteger)index;
+- (void)ywBannerFooterDidTrigger:(ywbanner *)banner;
 
 @end
 
@@ -44,5 +49,8 @@
 @required
 - (NSInteger)numberOfItemsInBannerView:(ywbanner *)banner;
 - (UIView  *)ywbanner:(ywbanner *)banner viewOfItemAtIndex:(NSInteger)index;
+
+@optional
+- (NSString *)ywbanner:(ywbanner *)banner titleForFooler:(ywFooterState)state;
 
 @end
