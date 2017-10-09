@@ -216,8 +216,7 @@ static NSString *banner_Footer = @"ywbannerFooter";
     if (!self.showFooter) return;
     static CGFloat lastOffset;
     CGFloat footerDisplayOffset = (scrollView.contentOffset.x - (self.frame.size.width * (self.itemsCount - 1)));
-    
-    // footer的动画
+
     if (footerDisplayOffset > 0) {
         // 开始出现footer
         if (footerDisplayOffset > YW_FOOTER_WIDTH) {
@@ -258,7 +257,7 @@ static NSString *banner_Footer = @"ywbannerFooter";
 }
 
 /**
- *  是否循环
+ *  是否无限循环
  */
 - (BOOL)shouldLoop {
     if (self.itemsCount <= 1 || self.showFooter) {
