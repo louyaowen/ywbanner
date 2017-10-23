@@ -237,8 +237,13 @@ static NSString *banner_Footer = @"ywbannerFooter";
     if (footerDisplayOffset > YW_FOOTER_WIDTH) {
         if ([self.delegate respondsToSelector:@selector(ywBannerFooterDidTrigger:)]) {
             [self.delegate ywBannerFooterDidTrigger:self];
+            //[scrollView setContentOffset:CGPointMake(SCREEN_WIDTH * 2, 0) animated:YES];
         }
     }
+}
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    NSLog(@"...");
 }
 
 #pragma mark - dataSource
@@ -357,7 +362,7 @@ static NSString *banner_Footer = @"ywbannerFooter";
         [_ywCollectionView registerClass:[ywbannerItem class] forCellWithReuseIdentifier:banner_Item];
         /* register footer */
         [_ywCollectionView registerClass:[ywfooter class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:banner_Footer];
-        //_ywCollectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, -YW_FOOTER_WIDTH);
+        _ywCollectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, -YW_FOOTER_WIDTH);
     }
     return _ywCollectionView;
 }
