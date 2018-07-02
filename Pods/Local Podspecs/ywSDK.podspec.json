@@ -1,0 +1,18 @@
+{
+  "name": "ywSDK",
+  "version": "0.0.1",
+  "summary": "私人pod代码",
+  "homepage": "https://gitee.com/louyw/ywSDK",
+  "source": {
+    "git": "https://gitee.com/louyw/ywSDK.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "SDK/*",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "authors": {
+    "louyaowen": "505135749@qq.com"
+  }
+}

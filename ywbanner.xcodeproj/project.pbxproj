@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		125319C019B5A9046A9012CE /* libPods-ywbanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACB934C115847AACEC22E86 /* libPods-ywbanner.a */; };
 		224EFB461F7B7F17003C9A0E /* ywfooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 224EFB451F7B7F17003C9A0E /* ywfooter.m */; };
 		224EFB4A1F7B85DE003C9A0E /* ywbanner.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 224EFB491F7B85DE003C9A0E /* ywbanner.bundle */; };
 		227963871F790F7800D5D57C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 227963861F790F7800D5D57C /* AppDelegate.m */; };
@@ -18,6 +17,7 @@
 		227963AD1F79101900D5D57C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 227963A41F79101800D5D57C /* main.m */; };
 		227963AE1F79101900D5D57C /* ywbanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 227963A71F79101900D5D57C /* ywbanner.m */; };
 		227963AF1F79101900D5D57C /* ywbannerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 227963A91F79101900D5D57C /* ywbannerItem.m */; };
+		858B9736A9DEDB04824F4F09 /* Pods_ywbanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0085C3E71B82FC4C96B426 /* Pods_ywbanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 		227963A71F79101900D5D57C /* ywbanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ywbanner.m; sourceTree = "<group>"; };
 		227963A81F79101900D5D57C /* ywbannerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ywbannerItem.h; sourceTree = "<group>"; };
 		227963A91F79101900D5D57C /* ywbannerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ywbannerItem.m; sourceTree = "<group>"; };
-		6ACB934C115847AACEC22E86 /* libPods-ywbanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ywbanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0085C3E71B82FC4C96B426 /* Pods_ywbanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ywbanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAADC32DC4E02F0B52E72B76 /* Pods-ywbanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ywbanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-ywbanner/Pods-ywbanner.release.xcconfig"; sourceTree = "<group>"; };
 		FDB373DBF0EC33CE9499CC88 /* Pods-ywbanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ywbanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ywbanner/Pods-ywbanner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				125319C019B5A9046A9012CE /* libPods-ywbanner.a in Frameworks */,
+				858B9736A9DEDB04824F4F09 /* Pods_ywbanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +60,7 @@
 		180C44DD7FCBF082925425BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6ACB934C115847AACEC22E86 /* libPods-ywbanner.a */,
+				7A0085C3E71B82FC4C96B426 /* Pods_ywbanner.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,7 +153,6 @@
 				2279637F1F790F7800D5D57C /* Frameworks */,
 				227963801F790F7800D5D57C /* Resources */,
 				89877348F27645E1FAD038E3 /* [CP] Embed Pods Frameworks */,
-				8DA6D99B5822EF29E571A7AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,28 +217,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ywbanner/Pods-ywbanner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/pubSpec/pubSpec.framework",
+				"${BUILT_PRODUCTS_DIR}/ywSDK/ywSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pubSpec.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ywSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ywbanner/Pods-ywbanner-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8DA6D99B5822EF29E571A7AA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ywbanner/Pods-ywbanner-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B649158FA119809E96DC565B /* [CP] Check Pods Manifest.lock */ = {
@@ -248,13 +241,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ywbanner-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

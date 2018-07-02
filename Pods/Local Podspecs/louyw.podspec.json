@@ -1,0 +1,19 @@
+{
+  "name": "louyw",
+  "version": "0.0.1",
+  "summary": "my first public cocoapods library louyw.",
+  "description": "here is description, this is just a test unit.",
+  "homepage": "http://EXAMPLE/louyw",
+  "authors": {
+    "louyaowen": "505135749@qq.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://gitee.com/louyw/louyw.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "sdk/*",
+  "exclude_files": "Classes/Exclude"
+}

@@ -1,0 +1,6 @@
+framework module ywSDK {
+  umbrella header "ywSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

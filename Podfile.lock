@@ -1,14 +1,36 @@
 PODS:
+  - louyw (0.0.1)
+  - pubSpec (1.0.0)
   - SDWebImage (4.1.0):
     - SDWebImage/Core (= 4.1.0)
   - SDWebImage/Core (4.1.0)
+  - SVProgressHUD (2.2.5)
+  - ywSDK (0.0.1)
 
 DEPENDENCIES:
+  - louyw (~> 0.0.1)
+  - pubSpec (~> 1.0.0)
   - SDWebImage (~> 4.0)
+  - SVProgressHUD
+  - ywSDK (~> 0.0.1)
+
+SPEC REPOS:
+  https://gitee.com/louyw/MyRepo.git:
+    - ywSDK
+  https://gitee.com/louyw/pravSpec.git:
+    - louyw
+  https://github.com/cocoapods/specs.git:
+    - pubSpec
+    - SDWebImage
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
+  louyw: 4477bb95553dcfd263098cd878c3e7a9b53e8cad
+  pubSpec: 3d07b3c21be064289c34765281f6f68691571902
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  ywSDK: 33b5ba63fd5aa9340f6e0853df0385c571b6d474
 
-PODFILE CHECKSUM: 3383fb4becb43b24bea357684b67f64b62607d4f
+PODFILE CHECKSUM: 11fda00a80f7d3fb80cbcea223b5140111da3b60
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.5.3

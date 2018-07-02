@@ -1,0 +1,6 @@
+framework module louyw {
+  umbrella header "louyw-umbrella.h"
+
+  export *
+  module * { export * }
+}

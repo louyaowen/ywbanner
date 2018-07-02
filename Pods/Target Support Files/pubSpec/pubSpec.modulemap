@@ -1,0 +1,6 @@
+framework module pubSpec {
+  umbrella header "pubSpec-umbrella.h"
+
+  export *
+  module * { export * }
+}
